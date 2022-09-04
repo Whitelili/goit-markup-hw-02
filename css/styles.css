@@ -25,7 +25,9 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color:#2196F3;
-  --primary-bg-color:#2F303A;
+  --primary-bg-color:#F5F5F5;
+  --primary-white-color: #FFFFFF;
+  --secondary-bg-color:#2F303A;
 }
 
 body {
@@ -51,6 +53,9 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.header{
+  background-color: var(--primary-white-color);
+}
 
 /* logo */
 .logo {
@@ -60,7 +65,7 @@ body {
   color: #000000;
 }
 .logo-white {
-color:#FFFFFF;
+color:var(--primary-white-color);
 }
 
 /* site nav */
@@ -82,6 +87,21 @@ color: var(--accent-color);
 }
 
 /* hero */
+.hero{
+  background-color: var(--secondary-bg-color);
+}
+.hero-title{
+  color:var(--primary-white-color)
+}
+.hero-button{
+  color:var(--primary-white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus{
+  background-color: #188CE8;
+}
 
 
 /* sections */
@@ -95,12 +115,22 @@ color: var(--accent-color);
 }
 /* what we do */
 /* our team */
+.section.color{
+  background-color: #F5F4FA;
+}
 .team-list .title {
   color: var(--title-text-color);
 }
+.team-list .icon{
+  background-color: var(--primary-white-color);
+}
+
 /* footer */
+.footer-page{
+  background-color: var(--secondary-bg-color);
+}
 .adress-place{
-    color:#FFFFFF
+    color:var(--primary-white-color)
 }
 .adress-mail{
     color:rgba(255, 255, 255, 0.6);
