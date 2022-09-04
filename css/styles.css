@@ -1,0 +1,116 @@
+/* цвет текста #212121 */
+/* вторичный цвет текста #757575*/
+/* белый #FFFFFF */
+/* акцент синий #2196F3 */
+/* для контактов в футере  rgba(255, 255, 255, 0.6)*/
+/* цвет лого черный #000000 */
+/* цвет фона темный  #2F303A */
+/* вторичный цвет фона белый #F5F5F5 */
+/* троичный цвет фона серый #F5F4FA */
+
+/* для скрытого текста
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color:#2196F3;
+  --primary-bg-color:#2F303A;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  font-style:normal;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* logo */
+.logo {
+  color: var(--accent-color);
+}
+.logo-black {
+  color: #000000;
+}
+.logo-white {
+color:#FFFFFF;
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color:var(--accent-color);
+}
+.site-nav .link.current{
+color: var(--accent-color);
+}
+.auth-nav .link{
+    color: var(--primary-text-color)
+}
+
+/* hero */
+
+
+/* sections */
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* advantages */
+.advantage-list .title {
+  color:var(--title-text-color);
+}
+/* what we do */
+/* our team */
+.team-list .title {
+  color: var(--title-text-color);
+}
+/* footer */
+.adress-place{
+    color:#FFFFFF
+}
+.adress-mail{
+    color:rgba(255, 255, 255, 0.6);
+}
+.adress-tel{
+    color: rgba(255, 255, 255, 0.6);
+}
+.adress-mail:hover,
+.adress-mail:focus,
+.adress-tel:hover,
+.adress-tel:focus{
+    color: var(--accent-color)
+}
