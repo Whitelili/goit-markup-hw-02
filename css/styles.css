@@ -115,7 +115,7 @@ color: var(--accent-color);
 }
 /* what we do */
 /* our team */
-.section.color{
+.section.people{
   background-color: #F5F4FA;
 }
 .team-list .title {
@@ -129,18 +129,20 @@ color: var(--accent-color);
 .footer-page{
   background-color: var(--secondary-bg-color);
 }
-.adress-place{
+.adress{
     color:var(--primary-white-color)
 }
-.adress-mail{
+.mail{
     color:rgba(255, 255, 255, 0.6);
 }
-.adress-tel{
+.tel{
     color: rgba(255, 255, 255, 0.6);
 }
-.adress-mail:hover,
-.adress-mail:focus,
-.adress-tel:hover,
-.adress-tel:focus{
+.adress:hover,
+.adress:focus,
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus{
     color: var(--accent-color)
 }
