@@ -28,6 +28,7 @@
   --primary-bg-color:#F5F5F5;
   --primary-white-color: #FFFFFF;
   --secondary-bg-color:#2F303A;
+  --third-bg-color:#F5F4FA;
 }
 
 body {
@@ -116,13 +117,14 @@ color: var(--accent-color);
 /* what we do */
 /* our team */
 .section.people{
-  background-color: #F5F4FA;
+  background-color: var(--third-bg-color);
 }
-.team-list .title {
-  color: var(--title-text-color);
-}
+
 .team-list .icon{
   background-color: var(--primary-white-color);
+}
+.icon .title {
+  color: var(--title-text-color);
 }
 
 /* footer */
@@ -145,4 +147,28 @@ color: var(--accent-color);
 .tel:hover,
 .tel:focus{
     color: var(--accent-color)
+}
+
+/* portfolio */
+
+/* buttons */
+.button-list{
+  color:var(--title-text-color);
+  background-color: var(--third-bg-color);
+  cursor: pointer;
+}
+.button-list:hover,
+.button-list:focus{
+  color:var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* projects view */
+.project-item{
+  background-color: var(--primary-white-color);
+}
+.project-item .title{
+  color:var(--title-text-color)
+}
+.project-item .text{
+  color: var(--primary-text-color);
 }
