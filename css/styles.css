@@ -25,17 +25,19 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --secondary-accent-color:#188ce8;
   --primary-white-color: #ffffff;
+  --primary-black-color:#000000;
+  --address-color: rgba(255, 255, 255, 0.6);
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
 }
 
-body {
+.body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -70,7 +72,7 @@ body {
   line-height: 1.2;
 }
 .logo-black {
-  color: #000000;
+  color: var(--primary-black-color);
 }
 .logo-white {
   color: var(--primary-white-color);
@@ -128,7 +130,7 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--secondary-accent-color);
 }
 
 /* sections */
@@ -175,10 +177,10 @@ body {
   color: var(--primary-white-color);
 }
 .footer-mail {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color);
 }
 .footer-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-color);
 }
 .footer-adress:hover,
 .footer-adress:focus,
